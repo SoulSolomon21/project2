@@ -55,9 +55,6 @@ function renderGame() {
     //altenatively
     sumEl.textContent = "Sum: " + sum
     messageEl.textContent = message 
-    //the below is called a template string. i think it makes rendering of variables int o html document much easier
-    //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
-    // cardsEl.textContent = `Cards: ${cards[0]} ${cards[1]}`
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
         //here we are just adding the numbers to the cardsEl paragraph
