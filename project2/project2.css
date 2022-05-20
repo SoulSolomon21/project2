@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(1, 97, 1);
+    font-family: montserrat;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h1{
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
+
+#start-btn{
+    background-color: goldenrod;
+    width: 150px;
+    color: #016f32;
+    font-weight: bold;
+    font-family: montserrat;
+    border-radius: 3px;
+}
+
+#new-cardbtn{
+    background-color: goldenrod;
+    width: 150px;
+    color: #016f32;
+    font-weight: bold;
+    font-family: montserrat;
+    border-radius: 3px;
+}
+
+button{
+    margin: 2px;
+}
