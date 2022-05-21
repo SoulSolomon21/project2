@@ -2,6 +2,7 @@ let player = {
     name: "Soul",
     chips: 145
 }
+//the object above stores our player's name and the amount of chips. these are just dummy values that will get rendered to the screen(in the player element) when the game starts
 let sum = 0
 let hasBlackjack = false
 let isAlive = false
@@ -33,22 +34,23 @@ function getRandomCard() {
 
 function startGame() {
     let isAlive = true
+    //here we used the getRandomCard function to assign a random number from 1 to 13 to the firstCard and secondCard variables
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
-    cards = [firstCard,secondCard]
+    cards = [firstCard,secondCard] //here we store the values of the firstCard and secondCard variables in the cards array
     sum = firstCard + secondCard
     renderGame()
 }
 
 function renderGame() {
     if (sum <= 20) {
-        message = " Do you want to draw a new card"
+        message = " Do you want to draw a new card?"
         isAlive = true
     } else if (sum === 21) {
         hasBlackjack = true
-        message = " You've got Blackjack"
+        message = " You've got Blackjack!!"
     } else {
-        message = " You're out of the game"
+        message = " You're out of the game!"
         isAlive = false
     }
     // sumEl.textContent += sum
